@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation Webmaster - Apprenez à créer et gérer des sites web</title>
+  <meta name="description" content="Formez-vous au métier de webmaster avec nos cours, quiz et obtenez une certification professionnelle">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">WebMaster Pro</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="courses.html">Cours</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-mobile" id="mobileMenu">
+      <div class="container">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="courses.html">Cours</a></li>
+          <li><a href="quizzes.html">Quiz</a></li>
+          <li><a href="certification.html">Certification</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+        <div class="auth-buttons-mobile">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Formation Webmaster Professionnelle</h1>
+        <p>Développez vos compétences en création et gestion de sites web et obtenez une certification reconnue</p>
+        <div class="hero-buttons">
+          <a href="courses.html" class="btn btn-primary btn-lg">
+            Commencer la formation <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="about.html" class="btn btn-outline btn-lg btn-white">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2>Notre programme de formation</h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Cours complets</h3>
+            <p>
+              Accédez à des cours détaillés couvrant HTML, CSS, JavaScript, SEO, et plus encore.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Quiz interactifs</h3>
+            <p>
+              Testez vos connaissances avec des quiz après chaque module pour renforcer votre apprentissage.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Certification</h3>
+            <p>
+              Obtenez un certificat après avoir réussi l'évaluation finale pour valoriser vos compétences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Preview -->
+    <section class="courses-preview">
+      <div class="container">
+        <h2>Nos modules de formation</h2>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-header">
+              <h3>HTML & CSS Fondamentaux</h3>
+            </div>
+            <div class="course-content">
+              <p>Apprenez à structurer et styliser vos pages web</p>
+              <div class="course-meta">
+                <span>12 leçons</span>
+                <span>Niveau: Débutant</span>
+              </div>
+              <a href="courses/1.html" class="btn btn-primary btn-block">Voir le cours</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-header">
+              <h3>JavaScript pour Webmasters</h3>
+            </div>
+            <div class="course-content">
+              <p>Ajoutez de l'interactivité à vos sites web</p>
+              <div class="course-meta">
+                <span>10 leçons</span>
+                <span>Niveau: Intermédiaire</span>
+              </div>
+              <a href="courses/2.html" class="btn btn-primary btn-block">Voir le cours</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-header">
+              <h3>Référencement SEO</h3>
+            </div>
+            <div class="course-content">
+              <p>Optimisez votre site pour les moteurs de recherche</p>
+              <div class="course-meta">
+                <span>8 leçons</span>
+                <span>Niveau: Tous niveaux</span>
+              </div>
+              <a href="courses/3.html" class="btn btn-primary btn-block">Voir le cours</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-header">
+              <h3>Responsive Web Design</h3>
+            </div>
+            <div class="course-content">
+              <p>Créez des sites adaptés à tous les appareils</p>
+              <div class="course-meta">
+                <span>6 leçons</span>
+                <span>Niveau: Intermédiaire</span>
+              </div>
+              <a href="courses/4.html" class="btn btn-primary btn-block">Voir le cours</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-header">
+              <h3>WordPress Avancé</h3>
+            </div>
+            <div class="course-content">
+              <p>Maîtrisez le CMS le plus populaire au monde</p>
+              <div class="course-meta">
+                <span>14 leçons</span>
+                <span>Niveau: Intermédiaire</span>
+              </div>
+              <a href="courses/5.html" class="btn btn-primary btn-block">Voir le cours</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-header">
+              <h3>Sécurité Web</h3>
+            </div>
+            <div class="course-content">
+              <p>Protégez votre site contre les menaces</p>
+              <div class="course-meta">
+                <span>7 leçons</span>
+                <span>Niveau: Avancé</span>
+              </div>
+              <a href="courses/6.html" class="btn btn-primary btn-block">Voir le cours</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="courses.html" class="btn btn-outline btn-lg">Voir tous les cours</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>Témoignages d'étudiants</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <h4>Sophie Martin</h4>
+                <p>Freelance Web Designer</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "Cette formation m'a permis de me lancer en tant que freelance. Le contenu est complet et les quiz m'ont aidée à bien assimiler les concepts."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <h4>Thomas Dubois</h4>
+                <p>Entrepreneur</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "J'ai pu créer et gérer moi-même le site de ma startup grâce à cette formation. Je recommande particulièrement les modules sur le SEO."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <h4>Léa Bernard</h4>
+                <p>Responsable Marketing</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "Formation idéale pour les professionnels du marketing qui veulent comprendre les aspects techniques du web. La certification est un vrai plus sur mon CV."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <h2>Prêt à devenir un webmaster certifié?</h2>
+        <p>Inscrivez-vous dès maintenant et commencez votre parcours vers la certification</p>
+        <a href="register.html" class="btn btn-white btn-lg">S'inscrire maintenant</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>WebMaster Pro</h3>
+          <p>Formation complète pour devenir un webmaster professionnel certifié.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Formation</h4>
+          <ul>
+            <li><a href="courses.html">Tous les cours</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="terms.html">Conditions d'utilisation</a></li>
+            <li><a href="privacy.html">Politique de confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> WebMaster Pro. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

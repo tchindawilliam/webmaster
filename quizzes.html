@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Formation Webmaster</title>
+  <meta name="description" content="Testez vos connaissances avec nos quiz interactifs">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">WebMaster Pro</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="courses.html">Cours</a></li>
+            <li><a href="quizzes.html" class="active">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-mobile" id="mobileMenu">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="courses.html">Cours</a></li>
+          <li><a href="quizzes.html" class="active">Quiz</a></li>
+          <li><a href="certification.html">Certification</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+        <div class="auth-buttons-mobile">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container py-12">
+      <div class="text-center mb-12">
+        <h1>Quiz d'évaluation</h1>
+        <p class="text-muted max-w-3xl mx-auto">
+          Testez vos connaissances avec nos quiz interactifs. Chaque quiz est conçu pour évaluer votre compréhension des
+          concepts clés abordés dans nos cours de formation webmaster.
+        </p>
+      </div>
+
+      <div class="quiz-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3>HTML Fondamentaux</h3>
+          </div>
+          <div class="card-body">
+            <p>Testez vos connaissances sur les bases du HTML, les balises et la structure des documents.</p>
+            <div class="quiz-meta-grid">
+              <div class="quiz-meta-item">
+                <i class="fas fa-question-circle"></i>
+                <span>15 questions</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>20 min</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Débutant</span>
+              </div>
+            </div>
+            <p class="quiz-course">
+              <span>Cours associé:</span> HTML & CSS Fondamentaux
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="quizzes/1.html" class="btn btn-primary btn-block">Commencer le quiz</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>CSS Fondamentaux</h3>
+          </div>
+          <div class="card-body">
+            <p>Évaluez votre maîtrise des sélecteurs CSS, des propriétés et du modèle de boîte.</p>
+            <div class="quiz-meta-grid">
+              <div class="quiz-meta-item">
+                <i class="fas fa-question-circle"></i>
+                <span>15 questions</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>20 min</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Débutant</span>
+              </div>
+            </div>
+            <p class="quiz-course">
+              <span>Cours associé:</span> HTML & CSS Fondamentaux
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="quizzes/2.html" class="btn btn-primary btn-block">Commencer le quiz</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>JavaScript Bases</h3>
+          </div>
+          <div class="card-body">
+            <p>Vérifiez vos connaissances sur les variables, les fonctions et les structures de contrôle en JavaScript.</p>
+            <div class="quiz-meta-grid">
+              <div class="quiz-meta-item">
+                <i class="fas fa-question-circle"></i>
+                <span>20 questions</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>25 min</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <p class="quiz-course">
+              <span>Cours associé:</span> JavaScript pour Webmasters
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="quizzes/3.html" class="btn btn-primary btn-block">Commencer le quiz</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>DOM Manipulation</h3>
+          </div>
+          <div class="card-body">
+            <p>Testez votre compréhension de la manipulation du DOM avec JavaScript.</p>
+            <div class="quiz-meta-grid">
+              <div class="quiz-meta-item">
+                <i class="fas fa-question-circle"></i>
+                <span>15 questions</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>20 min</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <p class="quiz-course">
+              <span>Cours associé:</span> JavaScript pour Webmasters
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="quizzes/4.html" class="btn btn-primary btn-block">Commencer le quiz</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>SEO On-Page</h3>
+          </div>
+          <div class="card-body">
+            <p>Évaluez vos connaissances sur les techniques de référencement on-page.</p>
+            <div class="quiz-meta-grid">
+              <div class="quiz-meta-item">
+                <i class="fas fa-question-circle"></i>
+                <span>15 questions</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>20 min</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Tous niveaux</span>
+              </div>
+            </div>
+            <p class="quiz-course">
+              <span>Cours associé:</span> Référencement SEO
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="quizzes/5.html" class="btn btn-primary btn-block">Commencer le quiz</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Responsive Design</h3>
+          </div>
+          <div class="card-body">
+            <p>Testez votre compréhension des media queries et des techniques de design responsive.</p>
+            <div class="quiz-meta-grid">
+              <div class="quiz-meta-item">
+                <i class="fas fa-question-circle"></i>
+                <span>15 questions</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>20 min</span>
+              </div>
+              <div class="quiz-meta-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <p class="quiz-course">
+              <span>Cours associé:</span> Responsive Web Design
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="quizzes/6.html" class="btn btn-primary btn-block">Commencer le quiz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>WebMaster Pro</h3>
+          <p>Formation complète pour devenir un webmaster professionnel certifié.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Formation</h4>
+          <ul>
+            <li><a href="courses.html">Tous les cours</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="terms.html">Conditions d'utilisation</a></li>
+            <li><a href="privacy.html">Politique de confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> WebMaster Pro. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

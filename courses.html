@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cours - Formation Webmaster</title>
+  <meta name="description" content="Explorez notre catalogue de cours pour devenir webmaster professionnel">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">WebMaster Pro</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="courses.html" class="active">Cours</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-mobile" id="mobileMenu">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="courses.html" class="active">Cours</a></li>
+          <li><a href="quizzes.html">Quiz</a></li>
+          <li><a href="certification.html">Certification</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+        <div class="auth-buttons-mobile">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container py-12">
+      <div class="text-center mb-12">
+        <h1>Nos Cours de Formation Webmaster</h1>
+        <p class="text-muted max-w-3xl mx-auto">
+          Explorez notre catalogue complet de cours pour développer vos compétences en création et gestion de sites web.
+          Chaque cours comprend des leçons théoriques, des exercices pratiques et des quiz pour tester vos
+          connaissances.
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-header">
+            <h3>HTML & CSS Fondamentaux</h3>
+          </div>
+          <div class="course-content">
+            <p>Apprenez à structurer et styliser vos pages web avec HTML5 et CSS3. Ce cours couvre les bases essentielles pour créer des sites web modernes et attrayants.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>12 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>8h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Débutant</span>
+              </div>
+            </div>
+            <a href="courses/1.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>JavaScript pour Webmasters</h3>
+          </div>
+          <div class="course-content">
+            <p>Maîtrisez JavaScript pour ajouter de l'interactivité à vos sites web. Vous apprendrez à manipuler le DOM, gérer les événements et créer des animations.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>10 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>7h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <a href="courses/2.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>Référencement SEO</h3>
+          </div>
+          <div class="course-content">
+            <p>Optimisez votre site pour les moteurs de recherche. Découvrez les techniques de référencement on-page et off-page pour améliorer votre visibilité.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>8 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>5h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Tous niveaux</span>
+              </div>
+            </div>
+            <a href="courses/3.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>Responsive Web Design</h3>
+          </div>
+          <div class="course-content">
+            <p>Créez des sites adaptés à tous les appareils. Apprenez à utiliser les media queries, les grilles flexibles et les images responsives.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>6 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>4h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <a href="courses/4.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>WordPress Avancé</h3>
+          </div>
+          <div class="course-content">
+            <p>Maîtrisez le CMS le plus populaire au monde. Apprenez à créer des thèmes personnalisés, des plugins et à optimiser les performances.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>14 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>10h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <a href="courses/5.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>Sécurité Web</h3>
+          </div>
+          <div class="course-content">
+            <p>Protégez votre site contre les menaces. Découvrez les vulnérabilités courantes et les meilleures pratiques pour sécuriser votre site web.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>7 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>5h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Avancé</span>
+              </div>
+            </div>
+            <a href="courses/6.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>PHP & MySQL</h3>
+          </div>
+          <div class="course-content">
+            <p>Développez des applications web dynamiques avec PHP et MySQL. Apprenez à créer des formulaires, gérer des bases de données et plus encore.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>15 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>12h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <a href="courses/7.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>UI/UX Design pour le Web</h3>
+          </div>
+          <div class="course-content">
+            <p>Créez des interfaces utilisateur attrayantes et intuitives. Apprenez les principes de conception, la psychologie des couleurs et les tests utilisateurs.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>9 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>6h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Tous niveaux</span>
+              </div>
+            </div>
+            <a href="courses/8.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <h3>E-commerce et Monétisation</h3>
+          </div>
+          <div class="course-content">
+            <p>Apprenez à créer et gérer une boutique en ligne. Découvrez les stratégies de monétisation et les meilleures pratiques pour l'e-commerce.</p>
+            <div class="course-meta-grid">
+              <div class="course-meta-item">
+                <i class="fas fa-book-open"></i>
+                <span>11 leçons</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-clock"></i>
+                <span>8h</span>
+              </div>
+              <div class="course-meta-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Intermédiaire</span>
+              </div>
+            </div>
+            <a href="courses/9.html" class="btn btn-primary btn-block">Voir le cours</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>WebMaster Pro</h3>
+          <p>Formation complète pour devenir un webmaster professionnel certifié.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Formation</h4>
+          <ul>
+            <li><a href="courses.html">Tous les cours</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="terms.html">Conditions d'utilisation</a></li>
+            <li><a href="privacy.html">Politique de confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> WebMaster Pro. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

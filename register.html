@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - Formation Webmaster</title>
+  <meta name="description" content="Inscrivez-vous à notre formation webmaster professionnelle">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">WebMaster Pro</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="courses.html">Cours</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-mobile" id="mobileMenu">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="courses.html">Cours</a></li>
+          <li><a href="quizzes.html">Quiz</a></li>
+          <li><a href="certification.html">Certification</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+        <div class="auth-buttons-mobile">
+          <a href="login.html" class="btn btn-outline">Connexion</a>
+          <a href="register.html" class="btn btn-primary">Inscription</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container py-12">
+      <div class="max-w-md mx-auto">
+        <div class="card">
+          <div class="card-header">
+            <h1>Inscription</h1>
+            <p>Créez votre compte pour accéder à la formation webmaster</p>
+          </div>
+          <div class="card-body">
+            <form id="registerForm">
+              <div class="form-step" id="step1">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="votre@email.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Mot de passe</label>
+                  <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                  <label for="confirm-password">Confirmer le mot de passe</label>
+                  <input type="password" id="confirm-password" required>
+                </div>
+              </div>
+
+              <div class="form-step hidden" id="step2">
+                <div class="form-group">
+                  <label for="name">Nom complet</label>
+                  <input type="text" id="name" placeholder="Jean Dupont" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone (optionnel)</label>
+                  <input type="tel" id="phone">
+                </div>
+                <div class="form-group">
+                  <label>Niveau en développement web</label>
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="beginner" name="level" value="beginner" checked>
+                      <label for="beginner">Débutant</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="intermediate" name="level" value="intermediate">
+                      <label for="intermediate">Intermédiaire</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="advanced" name="level" value="advanced">
+                      <label for="advanced">Avancé</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-step hidden" id="step3">
+                <div class="form-group">
+                  <label>Objectifs de formation</label>
+                  <div class="checkbox-group">
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="career">
+                      <label for="career">Reconversion professionnelle</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="skills">
+                      <label for="skills">Amélioration des compétences</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="freelance">
+                      <label for="freelance">Devenir freelance</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="personal">
+                      <label for="personal">Projet personnel</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Comment avez-vous connu notre formation?</label>
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="search" name="source" value="search" checked>
+                      <label for="search">Moteur de recherche</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="social" name="source" value="social">
+                      <label for="social">Réseaux sociaux</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="friend" name="source" value="friend">
+                      <label for="friend">Recommandation</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="other" name="source" value="other">
+                      <label for="other">Autre</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkbox-item terms-checkbox">
+                  <input type="checkbox" id="terms" required>
+                  <label for="terms">
+                    J'accepte les <a href="terms.html">conditions d'utilisation</a> et la <a href="privacy.html">politique de confidentialité</a>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <div class="form-buttons">
+              <button id="prevBtn" class="btn btn-outline" style="display: none;">Précédent</button>
+              <div class="right-buttons">
+                <a href="index.html" id="cancelBtn" class="btn btn-outline">Annuler</a>
+                <button id="nextBtn" class="btn btn-primary">Suivant</button>
+                <button id="submitBtn" class="btn btn-primary" style="display: none;">S'inscrire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>WebMaster Pro</h3>
+          <p>Formation complète pour devenir un webmaster professionnel certifié.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Formation</h4>
+          <ul>
+            <li><a href="courses.html">Tous les cours</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="certification.html">Certification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="terms.html">Conditions d'utilisation</a></li>
+            <li><a href="privacy.html">Politique de confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> WebMaster Pro. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

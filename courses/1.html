@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Fondamentaux - Formation Webmaster</title>
+  <meta name="description" content="Apprenez les bases du HTML et CSS pour créer des sites web modernes">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="../index.html" class="logo">WebMaster Pro</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../courses.html" class="active">Cours</a></li>
+            <li><a href="../quizzes.html">Quiz</a></li>
+            <li><a href="../certification.html">Certification</a></li>
+            <li><a href="../about.html">À propos</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="../login.html" class="btn btn-outline">Connexion</a>
+          <a href="../register.html" class="btn btn-primary">Inscription</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-mobile" id="mobileMenu">
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../courses.html" class="active">Cours</a></li>
+          <li><a href="../quizzes.html">Quiz</a></li>
+          <li><a href="../certification.html">Certification</a></li>
+          <li><a href="../about.html">À propos</a></li>
+        </ul>
+        <div class="auth-buttons-mobile">
+          <a href="../login.html" class="btn btn-outline">Connexion</a>
+          <a href="../register.html" class="btn btn-primary">Inscription</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container py-12">
+      <a href="../courses.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Retour aux cours
+      </a>
+
+      <div class="course-hero">
+        <h1>HTML & CSS Fondamentaux</h1>
+        <p>Apprenez à structurer et styliser vos pages web avec HTML5 et CSS3. Ce cours couvre les bases essentielles pour créer des sites web modernes et attrayants.</p>
+        <div class="course-meta-badges">
+          <div class="badge">
+            <i class="fas fa-book-open"></i>
+            <span>12 leçons</span>
+          </div>
+          <div class="badge">
+            <i class="fas fa-clock"></i>
+            <span>8 heures</span>
+          </div>
+          <div class="badge">
+            <i class="fas fa-check-circle"></i>
+            <span>Niveau débutant</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-content-wrapper">
+        <div class="course-main-content">
+          <div class="tabs">
+            <div class="tab-header">
+              <button class="tab-btn active" data-tab="lessons">Leçons</button>
+              <button class="tab-btn" data-tab="quizzes">Quiz</button>
+              <button class="tab-btn" data-tab="resources">Ressources</button>
+            </div>
+
+            <div class="tab-content active" id="lessons">
+              <h2>Contenu du cours</h2>
+
+              <div class="lesson-list">
+                <div class="lesson-card completed">
+                  <div class="lesson-number">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="lesson-info">
+                    <h3>Introduction au HTML</h3>
+                    <p>45 min</p>
+                  </div>
+                  <button class="btn btn-outline btn-sm">Revoir</button>
+                </div>
+
+                <div class="lesson-card completed">
+                  <div class="lesson-number">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="lesson-info">
+                    <h3>Structure d'une page web</h3>
+                    <p>30 min</p>
+                  </div>
+                  <button class="btn btn-outline btn-sm">Revoir</button>
+                </div>
+
+                <div class="lesson-card">
+                  <div class="lesson-number">3</div>
+                  <div class="lesson-info">
+                    <h3>Les balises sémantiques</h3>
+                    <p>60 min</p>
+                  </div>
+                  <button class="btn btn-primary btn-sm">Commencer <i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="lesson-card">
+                  <div class="lesson-number">4</div>
+                  <div class="lesson-info">
+                    <h3>Introduction au CSS</h3>
+                    <p>45 min</p>
+                  </div>
+                  <button class="btn btn-primary btn-sm">Commencer <i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="lesson-card">
+                  <div class="lesson-number">5</div>
+                  <div class="lesson-info">
+                    <h3>Sélecteurs CSS</h3>
+                    <p>60 min</p>
+                  </div>
+                  <button class="btn btn-primary btn-sm">Commencer <i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="lesson-card">
+                  <div class="lesson-number">6</div>
+                  <div class="lesson-info">
+                    <h3>Modèle de boîte</h3>
+                    <p>45 min</p>
+                  </div>
+                  <button class="btn btn-primary btn-sm">Commencer <i class="fas fa-play"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="quizzes">
+              <h2>Quiz d'évaluation</h2>
+
+              <div class="quiz-list">
+                <div class="quiz-card">
+                  <div class="quiz-number">1</div>
+                  <div class="quiz-info">
+                    <h3>Quiz HTML de base</h3>
+                    <p>10 questions · 15 min</p>
+                  </div>
+                  <button class="btn btn-primary btn-sm">Commencer</button>
+                </div>
+
+                <div class="quiz-card">
+                  <div class="quiz-number">2</div>
+                  <div class="quiz-info">
+                    <h3>Quiz CSS de base</h3>
+                    <p>10 questions · 15 min</p>
+                  </div>
+                  <button class="btn btn-primary btn-sm">Commencer</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="resources">
+              <h2>Ressources complémentaires</h2>
+
+              <div class="resource-list">
+                <div class="resource-card">
+                  <div class="resource-number">1</div>
+                  <div class="resource-info">
+                    <h3>Cheat Sheet HTML5</h3>
+                    <p>Format: PDF</p>
+                  </div>
+                  <button class="btn btn-outline btn-sm">Télécharger</button>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-number">2</div>
+                  <div class="resource-info">
+                    <h3>Cheat Sheet CSS3</h3>
+                    <p>Format: PDF</p>
+                  </div>
+                  <button class="btn btn-outline btn-sm">Télécharger</button>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-number">3</div>
+                  <div class="resource-info">
+                    <h3>Exemples de code</h3>
+                    <p>Format: ZIP</p>
+                  </div>
+                  <button class="btn btn-outline btn-sm">Télécharger</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-sidebar">
+          <div class="card">
+            <h2>Progression du cours</h2>
+            <div class="progress-container">
+              <div class="progress-label">
+                <span>Progression</span>
+                <span>33%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 33%"></div>
+              </div>
+            </div>
+
+            <div class="progress-stats">
+              <div class="stat-item">
+                <span>Leçons complétées</span>
+                <span class="stat-value">2/6</span>
+              </div>
+              <div class="stat-item">
+                <span>Quiz complétés</span>
+                <span class="stat-value">0/2</span>
+              </div>
+              <div class="stat-item">
+                <span>Temps total</span>
+                <span class="stat-value">8 heures</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block">Continuer le cours</button>
+            <button class="btn btn-outline btn-block">
+              Télécharger le certificat
+              <span class="badge-small">Non disponible</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>WebMaster Pro</h3>
+          <p>Formation complète pour devenir un webmaster professionnel certifié.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Formation</h4>
+          <ul>
+            <li><a href="../courses.html">Tous les cours</a></li>
+            <li><a href="../quizzes.html">Quiz</a></li>
+            <li><a href="../certification.html">Certification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="../terms.html">Conditions d'utilisation</a></li>
+            <li><a href="../privacy.html">Politique de confidentialité</a></li>
+            <li><a href="../cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> WebMaster Pro. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
